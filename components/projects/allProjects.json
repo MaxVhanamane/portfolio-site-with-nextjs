@@ -1,0 +1,22 @@
+[
+    { "id":1,
+     "image":"/files/projects/googlekeep/googlekeep2.png",
+     "title":"Googlekeep2",
+     "github":"https://github.com/MaxVhanamane/googlekeep2",
+     "demo":"https://googlekeep2.herokuapp.com",
+     "details":"Googlekeep2 allows users to add text notes. You can edit and delete these notes. It has login and signup functionality.",
+     "tech":["HTML","CSS","Javascript","ReactJS","NodeJS","ExpressJS","MongoDB"]},
+     { "id":2,
+     "image":"/files/projects/newsapp/dailydose.png",
+
+     "title":"Daily Dose (News app)",
+     "github":"https://github.com/MaxVhanamane/news-app-using-reactjs",
+     "video":"/files/projects/newsapp/newsapp.mp4",
+     "details":"Daily Dose shows the top news headlines of the day in different fields, you can learn more about a specific article by clicking on the read more button.",
+     "tech":["HTML","CSS","Javascript","ReactJS","News Api"]}
+
+ 
+    
+      
+    ]
+ 

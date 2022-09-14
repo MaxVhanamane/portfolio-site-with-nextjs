@@ -1,0 +1,107 @@
+.header {
+    /* height: 100vh; */
+    padding-top: 7rem;
+    /* overflow: hidden; */
+   margin-left: 4.56rem; /*remove this if you use navbar at bottom on lg screen */
+
+  }
+  .header_container {
+    text-align: center;
+    /* height: 100%; */
+    position: relative;
+  }
+  
+  /* CTA  */
+  .cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+  }
+  
+  /* Social Links  */
+  .socialLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: -3rem;
+  }
+  
+  .socialLinks::after {
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+  }
+  
+  /* Image  */
+  
+  .my_profile {
+    background: linear-gradient(var(--color-primary), transparent);
+    width: 25rem;
+    height: 35rem;
+    position: absolute;
+    left: calc(50% - 12.5rem); /* to center the image  */
+    /* there must be space in between operation eg.calc(50 - 5). cal(50-5) this will not work */
+    margin-top: 4rem;
+    border-radius: 12rem 12rem 0 0;
+  
+    padding: 5rem 1.5rem 0 1.5rem;
+    overflow: hidden;
+  }
+  
+  .scroll_down {
+    position: absolute;
+    right: -2.3rem;
+    bottom: -1rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+  }
+  .typeeffect{
+    font-size: 2.5rem;
+  }
+  /* Media Queries For (Medium Devices)*/
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .header {
+      margin-left: auto; /*remove this if you use navbar at bottom on lg screen */
+
+    }
+    .my_profile {
+      width: 15rem;
+      height: 20rem;
+      left: calc(50% - 7.5rem);
+    }
+  
+    .scroll_down {
+      margin-right: 2rem;
+    }
+  
+    /* Social Links  */
+    .socialLinks {
+      margin-left: 2rem;
+    }
+  }
+  
+  /* Media Queries For (small Devices)*/
+  @media screen and (max-width: 767px) {
+    .header {
+      margin-left: auto; /*remove this if you use navbar at bottom on lg screen */
+    }
+    .scroll_down,
+    .socialLinks {
+      display: none;
+    }
+    .my_profile {
+      width: 10rem;
+      height: 15rem;
+      left: calc(50% - 5rem);
+    }
+    .typeeffect{
+      font-size: 1.8rem;
+    }
+  }
+  

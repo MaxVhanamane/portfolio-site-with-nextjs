@@ -1,0 +1,60 @@
+
+body.active_modal {
+    overflow-y: hidden;
+}
+
+.modal{
+  z-index: 1;
+}
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    
+}
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+.modal_content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.6);
+    padding: 50px 20px;
+    border-radius: 3px;
+  width: 50%;
+
+}
+
+.close_modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+    background-color: #A30000;
+    cursor: pointer;
+}
+
+
+/* Media Queries For (Medium Devices)*/
+@media screen and (max-width: 1024px) {
+    .modal_content {
+      
+      width: 90%;
+    }
+  }
+  
+  /* Media Queries For (small Devices)*/
+  @media screen and (max-width: 600px) {
+    .modal-content {
+      
+        width: 90%;
+      }
+  }

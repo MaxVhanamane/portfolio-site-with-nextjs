@@ -1,4 +1,4 @@
-html,
+/* html,
 body {
   padding: 0;
   margin: 0;
@@ -22,5 +22,159 @@ a {
   body {
     color: white;
     background: black;
+  }
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Poppins:wght@300;400;500;600&family=Ubuntu&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none; /*it will remove the underline from all the anchor tag */
+}
+
+/* css variables */
+
+:root {
+  --color-bg: #1f1f38;
+  --color-bg-variant: #2c2c6c;
+  --color-primary: #4db5ff;
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.6);
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+  --transition: all 400ms ease;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* To hide scrollbar  */
+  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--color-bg);
+  /* background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  background-image: url("https://www.transparenttextures.com/patterns/football-no-lines.png");
+  background-image: url("https://www.transparenttextures.com/patterns/subtle-dark-vertical.png");
+  background-image: url("https://www.transparenttextures.com/patterns/random-grey-variations.png"); */
+  background-image: url("/assets/otis-redding.png");
+  /* background-image: url("https://www.transparenttextures.com/patterns/triangles.png"); */
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+  color: var(--color-white);
+  line-height: 1.7;
+
+}
+
+/* To hide scrollbar in chrome  */
+::-webkit-scrollbar {
+  display: none;
+}
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto; /*to center the container*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+section {
+  margin-top: 8rem;
+   margin-left: 4.56rem; /*remove this if you use navbar at bottom on lg screen */
+}
+
+section > h2,
+section > h5 {
+  text-align: center;
+  color: var(--color-light);
+}
+
+section > h2 {
+  color: var(--color-primary);
+  margin-bottom: 3rem;
+}
+
+.textLight {
+  color: var(--color-light);
+}
+
+a {
+  color: var(--color-primary);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--color-white);
+}
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: var(--color-primary);
+  padding: 0.4rem 1rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+}
+
+.btn:hover {
+  background: var(--color-white);
+  color: var(--color-bg);
+  border-color: transparent;
+}
+
+.btn_primary {
+  background: var(--color-primary);
+  color: var(--color-bg);
+}
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+   /* Media Queries For (medium Devices)*/
+   @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+  section {
+    margin-top: 6rem;
+   margin-left: auto /*remove this if you use navbar at bottom on lg screen */
+
+  }
+}
+
+/* Media Queries For (small Devices)*/
+@media screen and (max-width: 767px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+  section > h2 {
+    margin-top: 1rem;
+  }
+  section {
+    margin-top: 6rem;
+   margin-left: auto /*remove this if you use navbar at bottom on lg screen */
+
   }
 }

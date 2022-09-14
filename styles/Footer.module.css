@@ -1,0 +1,122 @@
+.footer {
+    /* background: var(--color-primary); */
+    padding: 3rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 7rem;
+    
+  }
+  .footer a {
+    color: var(--color-bg);
+  }
+  
+  .mx{
+    display: flex;
+    flex-direction: row-reverse;
+    /* align-content: space-between; */
+    justify-content: space-between;
+    /* align-content: space-around; */
+  }
+  
+  .footer_socials {
+    justify-content: center;
+    margin-right: 10rem;
+  }
+  
+  .footer_socials a {
+    background: var(--color-primary);
+    padding: 0.6rem;
+    border-radius: 0.7rem;
+    border: 1px solid transparent;
+    margin-right: 1rem;
+  }
+  
+  .footer_socials a:hover {
+    background:  var(--color-white);
+    border-color: var(--color-bg);
+  }
+  
+  .footer_copyright {
+    margin-bottom: 2rem;
+    color: gray;
+    font-size: 1.2rem;
+    margin-left: 7.56rem;
+  }
+  .hr{
+    border-top:2px solid #484848 ;
+    margin:0 3rem 4rem 7.56rem;
+  }
+  /* Media Queries For (small Devices)*/
+  @media screen and (max-width: 767px) {
+    .footer {
+      margin-top: 4rem;
+    }
+    .mx{
+      flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    }
+    .footer_socials{
+      display: flex;
+      
+      margin-right: 0;
+      
+    }
+    .footer_socials a {
+      background: var(--color-primary);
+      padding: 0.6rem;
+      border-radius: 0.7rem;
+      border: 1px solid transparent;
+      margin-right: 1rem;
+      line-height: 0;
+    }
+    .footer_copyright {
+      margin-top: 2rem;
+      color: gray;
+      font-size: 1.2rem;
+      margin-left: 0;
+    margin-bottom: 5rem;
+
+    }
+    .hr{
+      margin:0 1rem 4rem 1rem;
+      
+    }
+  }
+ 
+
+   /* Media Queries For (medium Devices)*/
+   @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .mx{
+      flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    }
+    .footer_socials{
+      display: flex;
+      
+      margin-right: 0;
+      
+    }
+    .footer_socials a {
+      background: var(--color-primary);
+      padding: 0.7rem;
+      border-radius: 0.7rem;
+      border: 1px solid transparent;
+      margin-right: 1.5rem;
+      line-height: 0;
+    }
+    .footer_copyright {
+      margin-top: 2rem;
+      color: gray;
+      font-size: 1.4rem;
+      margin-left: 0;
+    margin-bottom: 5rem;
+
+    }
+    .hr{
+      margin:0 1rem 4rem 1rem;
+    }
+  
+   }
