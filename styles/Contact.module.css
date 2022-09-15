@@ -1,5 +1,5 @@
 .contact_container {
-    width: 60%;
+    width: 70%;
     display: grid;
     grid-template-columns: 30% 60%;
     gap: 10%;
@@ -58,17 +58,19 @@
   }
   
   /* Media Queries For (Medium Devices)*/
-  @media screen and (max-width: 1024px) {
+  @media only  screen and (max-width: 1024px) and (min-width: 768px) {
    .contact_container {
-      grid-template-columns: 1fr;
+     grid-template-columns: 1fr;
       gap: 2rem;
     }
   }
   
   /* Media Queries For (small Devices)*/
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 767px) {
     .contact_container {
       width: var(--container-width-sm);
+      grid-template-columns: 1fr;
+      gap: 2rem;
     }
   }
   

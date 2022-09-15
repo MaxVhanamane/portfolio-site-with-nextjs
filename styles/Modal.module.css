@@ -51,10 +51,4 @@ body.active_modal {
     }
   }
   
-  /* Media Queries For (small Devices)*/
-  @media screen and (max-width: 600px) {
-    .modal-content {
-      
-        width: 90%;
-      }
-  }
+

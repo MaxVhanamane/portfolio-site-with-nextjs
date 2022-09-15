@@ -42,8 +42,8 @@
     color: var(--color-primary);
   }
   
-  /* Media Queries For (Medium Devices)*/
-  @media screen and (max-width: 1024px) {
+   /* Media Queries For (Medium Devices)*/
+   @media only  screen and (max-width: 1024px) and (min-width: 768px) {
     .skills_container {
       grid-template-columns: 1fr;
     }
@@ -58,8 +58,10 @@
   }
   
   /* Media Queries For (small Devices)*/
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 767px) {
     .skills_container {
+      grid-template-columns: 1fr;
+
       gap: 1rem;
     }
     .skills_container > div {

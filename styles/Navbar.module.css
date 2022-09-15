@@ -40,8 +40,8 @@ background-image: url("/assets/otis-redding.png");
 
 /* For left navbar */
 
- /* Media Queries For (Medium Devices)*/
- @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Media Queries For (Medium Devices)*/
+  @media only  screen and (max-width: 1024px) and (min-width: 768px) {
   .container {
     width: var(--container-width-md);
   }

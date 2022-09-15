@@ -121,20 +121,16 @@
     object-fit: fill;
   }
   
-  /* Media Queries For (Medium Devices)*/
-  @media screen and (max-width: 1024px) {
+     /* Media Queries For (Medium Devices)*/
+     @media only  screen and (max-width: 1024px) and (min-width: 768px) {
     .projects_container {
       grid-template-columns: 1fr 1fr;
       gap: 1.2rem;
     }
   }
-  .video{
-    max-height: 100vh;
-          max-width: 100vw;
-          width: 100%;
-  }
+
   /* Media Queries For (small Devices)*/
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 767px) {
     .projects_container {
       grid-template-columns: 1fr;
       gap: 1rem;
