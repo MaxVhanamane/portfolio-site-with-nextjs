@@ -5,18 +5,54 @@
      "github":"https://github.com/MaxVhanamane/googlekeep2",
      "demo":"https://googlekeep2.herokuapp.com",
      "details":"Googlekeep2 allows users to add text notes. You can edit and delete these notes. It has login and signup functionality.",
-     "tech":["HTML","CSS","Javascript","ReactJS","NodeJS","ExpressJS","MongoDB"]},
+     "tech":["HTML","CSS","Javascript","ReactJS","NodeJS","ExpressJS","MongoDB"],
+     "level":"Advanced"
+    },
+     
+     
      { "id":2,
-     "image":"/files/projects/newsapp/dailydose.png",
+     "image":"/files/projects/newsapp/dailydose.jpg",
 
      "title":"Daily Dose (News app)",
      "github":"https://github.com/MaxVhanamane/news-app-using-reactjs",
+     "demo":"https://maxvhanamane.github.io/daily-dose/",
      "video":"/files/projects/newsapp/newsapp.mp4",
      "details":"Daily Dose shows the top news headlines of the day in different fields, you can learn more about a specific article by clicking on the read more button.",
-     "tech":["HTML","CSS","Javascript","ReactJS","News Api"]}
+     "tech":["HTML","CSS","Javascript","ReactJS","News Api"],
+     "level":"Advanced"
+    },
 
- 
-    
-      
+     { "id":3,
+     "image":"/files/projects/teacherstoolkit/teacherstoolkit.png",
+     "title":"Teachers Toolkit",
+     "github":"https://github.com/MaxVhanamane/teachers-toolkit",
+     "demo":"https://shejalesir.vercel.app/",
+     "details":"With this app, students can access simple and easy notes made by their teachers. I have added several options to pick from. check it out.",
+     "tech":["HTML","Tailwind CSS","Javascript","NextJs","MongoDB"],
+     "level":"Advanced"
+    },
+
+     
+     { "id":6,
+     "image":"/files/projects/drumkit/drumkit.png",
+
+     "title":"Drum Kit",
+     "github":"https://github.com/MaxVhanamane/Drum",
+     "demo":"https://maxvhanamane.github.io/Drum/",
+     "details":"The drum kit lets you make various cool sounds simply by clicking the buttons. ",
+     "tech":["HTML","CSS","Javascript"],
+     "level":"Intermediate"
+    },
+     { "id":7,
+     "image":"/files/projects/todolist/todolist.jpg",
+
+     "title":"Drum Kit",
+     "github":"https://github.com/MaxVhanamane/TodoList",
+     "demo":"https://todolist.cyclic.app/",
+     "details":"The Todo list lets you add tasks you need to complete. and it is easy to use. ",
+     "tech":["HTML","CSS","Javascript","NodeJS","ExpressJS","MongoDB"],
+     "level":"Intermediate"
+    }
+     
     ]
  

@@ -4,7 +4,8 @@
   height: 100%;
 background: var(--color-bg);
 background-image: url("/assets/otis-redding.png");
-  border-right: 1px solid #484848;
+  /* border-right: 1px solid #2c2c6c; */
+  box-shadow: 0 3px 3px #2c2c6c;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,8 +51,8 @@ background-image: url("/assets/otis-redding.png");
     border-radius: 3rem;
     height: max-content;
     background: rgba(0, 0, 0, 0.3);
+    box-shadow: none;
 
-      border-right: 1px solid #484848;
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -62,7 +63,7 @@ background-image: url("/assets/otis-redding.png");
       bottom: 0;
       top:auto;
       transform: translateX(-50%);
-      gap: 0.8rem;
+      gap: 1.2rem;
       backdrop-filter: blur(15);
 
       width: 75%;
@@ -81,6 +82,7 @@ background-image: url("/assets/otis-redding.png");
 /* Media Queries For (small Devices)*/
 @media screen and (max-width: 767px) {
   .nav {
+    box-shadow: 0 -5px 5px -5px #2c2c6c;
 
     width: 100%;
     border-radius: 0;
@@ -88,7 +90,6 @@ background-image: url("/assets/otis-redding.png");
       
     height: max-content;
     /* background: var(--color-bg); */
-      border-right: 1px solid #484848;
       display: flex;
       flex-direction: row;
       justify-content: center;

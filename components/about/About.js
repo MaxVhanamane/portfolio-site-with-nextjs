@@ -36,7 +36,7 @@ function About() {
           I enjoy building dynamic, creative products from start to finish.
           I primarily use Python/Javascript. However, picking up a new framework or language isn't a problem. 
           I have extensive programming experience and I'm comfortable developing on the frontend or backend.
-          You can see some of the things I worked on in <a href="#projects">projects</a> section or on my <a href="https://github.com/MaxVhanamane" target="_blank">github</a> page. Fan of the Darknet Diaries podcast.
+          You can see some of the things I worked on in <a href="#projects">projects</a> section or on my <a href="https://github.com/MaxVhanamane" target="_blank">github</a> page. And I am a huge Fan of the Darknet Diaries podcast.
           </p>
           <a href="#contact" className="btn btn_primary">
             Let's Talk

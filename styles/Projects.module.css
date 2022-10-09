@@ -7,7 +7,7 @@
     background: var(--color-bg-variant);
     padding: 1.2rem;
     border-radius: 2rem;
-    border: 1px solid transparent;
+    border: 1px solid var(--border-color);
     transition: var(--transition);
   }
   
@@ -38,7 +38,7 @@
     height: 12rem;
     object-position: center;
     position: relative;
-
+object-fit: cover;
   }
   /* .project_item_image > img{
     display: block;
@@ -80,6 +80,7 @@
     color: #191919;
     padding: 4px;
     height: 9rem;
+    text-align: justify;
   }
   .project_item_image:hover > .content.slide_up{
     transform:translateY(0%);

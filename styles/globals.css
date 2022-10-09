@@ -63,10 +63,10 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   background: var(--color-bg);
-  /* background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
-  background-image: url("https://www.transparenttextures.com/patterns/football-no-lines.png");
-  background-image: url("https://www.transparenttextures.com/patterns/subtle-dark-vertical.png");
-  background-image: url("https://www.transparenttextures.com/patterns/random-grey-variations.png"); */
+  /* background-image: url("https://www.transparenttextures.com/patterns/cubes.png"); */
+  /* background-image: url("https://www.transparenttextures.com/patterns/football-no-lines.png"); */
+  /* background-image: url("https://www.transparenttextures.com/patterns/subtle-dark-vertical.png"); */
+  /* background-image: url("https://www.transparenttextures.com/patterns/random-grey-variations.png"); */
   background-image: url("/assets/otis-redding.png");
   /* background-image: url("https://www.transparenttextures.com/patterns/triangles.png"); */
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
@@ -102,6 +102,10 @@ section {
    margin-left: 4.56rem; /*remove this if you use navbar at bottom on lg screen */
 }
 
+h3{
+  text-align: center;
+  margin-bottom: 2rem;
+}
 section > h2,
 section > h5 {
   text-align: center;
@@ -177,4 +181,5 @@ img {
    margin-left: auto /*remove this if you use navbar at bottom on lg screen */
 
   }
+  
 }

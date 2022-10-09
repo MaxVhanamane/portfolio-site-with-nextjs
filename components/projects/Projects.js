@@ -3,11 +3,8 @@ import styles from "./../../styles/Projects.module.css"
 import mstyles from "./../../styles/Modal.module.css"
 import Image from "next/image";
 import allProject from "./allProjects.json";
-import dynamic from 'next/dynamic';
-import 'shaka-player/dist/controls.css';
 function Projects() {
 
-  const ShakaPlayer = dynamic(() => import('shaka-player-react'), { ssr: false });
 
   const [modal, setModal] = useState(false);
   const [vidLink, setVidLink] = useState("");
@@ -37,7 +34,6 @@ function Projects() {
               <source src={vidLink} type="video/mp4" />
             </video>
            
-              {/* <ShakaPlayer className={styles.video} autoPlay src={vidLink} /> */}
            
             <button className={mstyles.close_modal} onClick={toggleModal}>
               X
@@ -47,11 +43,12 @@ function Projects() {
       )}
 
       <section id="projects">
-        <h5>My Recent Work</h5>
+        <h5>My Work</h5>
         <h2>Projects</h2>
+        <h3>Advanced</h3>
         <div className={["container", styles.projects_container].join(" ")}>
 
-          {allProject.map((data) => {
+          {allProject.filter((data)=>{return data.level=="Advanced"}).map((data) => {
 
             return (
        
@@ -82,7 +79,7 @@ function Projects() {
 
                 </div>
 
-                <h3>{data.title}</h3>
+                <h3 style={{textAlign:"left"}}>{data.title}</h3>
                
                 <div className={styles.project_item_cta}>
                   <a
@@ -110,7 +107,76 @@ function Projects() {
             );
           })}
         </div>
-      </section></>
+        <div  style={{marginTop:"3rem"}}>
+     
+     
+        <h3>Intermediate</h3>
+        <div className={["container", styles.projects_container].join(" ")}>
+
+          {allProject.filter((data)=>{return data.level=="Intermediate"}).map((data) => {
+
+            return (
+       
+              <article key={data.id} className={styles.project_item} >
+               
+               {/* <div>
+                {modal&& <ShakaPlayer autoPlay src={vidLink} />}
+               </div> */}
+
+                <div 
+                   className={styles.project_item_image} >
+                    <div className={styles.ima}>
+                  <Image className={styles.blur} src={data.image} layout="fill"  objectFit="cover" quality={75} alt="project_image"  /></div>
+                  <div className= {[styles.content, styles.slide_up].join(" ")} >
+                    <div className={styles.description}>
+
+                    {data.details}
+                    </div>
+
+                    <div className={styles.tech_used}>
+                      {data.tech?.map((item)=>{return <span key={item} className={styles.tech}>{item}</span>})}
+                
+                
+
+                </div>
+                  
+                  </div>
+
+                </div>
+
+                <h3 style={{textAlign:"left"}}>{data.title}</h3>
+
+               
+                <div className={styles.project_item_cta}>
+                  <a
+                    href={data.github}
+                    className="btn"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Github
+                  </a>
+                  {data.demo ? <a
+                    href={data.demo}
+                    className="btn btn_primary"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Go Live
+                  </a> : <button className="btn btn_primary" onClick={() => { toggleModal(data.video) }}>Watch Demo</button>
+
+                  }
+                </div>
+  
+              </article>
+             
+            );
+          })}
+        </div>
+        </div>
+      </section>
+      
+      </>
   );
 }
 
