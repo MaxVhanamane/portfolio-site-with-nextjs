@@ -67,7 +67,7 @@ function Contact() {
           </article>
           <article className={styles.contact_option}>
             <BsWhatsapp className={styles.contact_option_icon} />
-            <h4>What's app</h4>
+            <h4>What&apos;s app</h4>
             <h5>+918390008589</h5>
             <a
               href="https://api.whatsapp.com/send?phone=8390008589"

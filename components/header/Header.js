@@ -9,7 +9,7 @@ function Header() {
   return (
     <header className={styles.header} id="home">
       <div className={["container", styles.header_container].join(" ")}>
-        <h5>Hello I'm</h5>
+        <h5>Hello I&apos;m</h5>
         <h1 className={styles.typeeffect}>   <Typewriter
   
 options={{

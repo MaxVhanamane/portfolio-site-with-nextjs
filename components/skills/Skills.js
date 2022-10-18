@@ -134,7 +134,7 @@ function Skills() {
             <article className={styles.skill_detail}>
               <RiShieldCheckFill className={styles.skill_detail_icon} />
               <div>
-                <h4>API's</h4>
+                <h4>API&apos;s</h4>
                 <small className="textLight">Intermediate</small>
               </div>
             </article>

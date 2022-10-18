@@ -28,7 +28,7 @@
      "github":"https://github.com/MaxVhanamane/teachers-toolkit",
      "demo":"https://shejalesir.vercel.app/",
      "details":"With this app, students can access simple and easy notes made by their teachers. I have added several options to pick from. check it out.",
-     "tech":["HTML","Tailwind CSS","Javascript","NextJs","MongoDB"],
+     "tech":["HTML","Tailwind CSS","Javascript","ReactJs","NextJs","MongoDB"],
      "level":"Advanced"
     },
 
@@ -46,7 +46,7 @@
      { "id":7,
      "image":"/files/projects/todolist/todolist.jpg",
 
-     "title":"Drum Kit",
+     "title":"To Do List",
      "github":"https://github.com/MaxVhanamane/TodoList",
      "demo":"https://todolist.cyclic.app/",
      "details":"The Todo list lets you add tasks you need to complete. and it is easy to use. ",
