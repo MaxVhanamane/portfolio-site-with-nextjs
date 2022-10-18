@@ -86,7 +86,7 @@ function Contact() {
           />
           <input className={styles.input} type="email" name="email" placeholder="Enter your email" />
           <textarea className={styles.textarea} name="message" rows="7"></textarea >
-          <button type="submit" className="btn btn_primary">
+          <button type="submit" className= {[styles.btn,styles.btn_primary,styles.contact_container].join(" ")}>
             Submit
           </button>
         </form>
