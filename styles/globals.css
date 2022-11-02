@@ -41,6 +41,7 @@ a {
 
 :root {
   --color-bg: #1f1f38;
+  --color-bg-2: #7171ce;
   --color-bg-variant: #2c2c6c;
   --color-primary: #4db5ff;
   --color-primary-variant: rgba(77, 181, 255, 0.4);
@@ -50,6 +51,36 @@ a {
   --container-width-md: 86%;
   --container-width-sm: 90%;
   --transition: all 400ms ease;
+  --typing-effect-color:#fff;
+  --color-black:rgb(255, 253, 253);
+  --color-gray:rgba(255,255,255,0.5);
+  --color-gray-varient-1:#1f2937;
+  --color-gray-varient-2:rgb(105, 104, 105);
+  --border-color:none;
+  --color-light-2: rgba(255, 255, 255, 0.6);
+  
+
+}
+
+.light_theme {
+  --color-bg: #f8f0f0;
+  --color-bg-2: #7171ce;
+  --color-bg-variant: #2c2c6c;
+  --color-primary: #36a2ef;
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-white: rgb(0, 0, 0);
+  --color-light: rgba(255, 237, 237, 0.6);
+  --color-light-2: rgba(0, 0, 0, 0.7);
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+  --transition: all 400ms ease;
+  --typing-effect-color:#000;
+    --color-black:#000;
+    --color-white-2:#fff;
+  --color-gray:rgba(255,255,255,0.5);
+  --color-gray-varient-1:#191919;
+  --color-gray-varient-2:rgb(105, 104, 105);
 }
 
 html {
@@ -109,7 +140,7 @@ h3{
 section > h2,
 section > h5 {
   text-align: center;
-  color: var(--color-light);
+  color: var(--color-light-2);
 }
 
 section > h2 {
@@ -169,7 +200,7 @@ img {
 }
 
 /* Media Queries For (small Devices)*/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.5px) {
   .container {
     width: var(--container-width-sm);
   }

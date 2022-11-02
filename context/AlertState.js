@@ -1,6 +1,6 @@
-import React from "react";
+import React,{useRef} from "react";
 // import NoteContext from "./NoteContext"
-import { createContext, useState } from "react";
+import { createContext, useState} from "react";
 
 // creating context object and exporting it.
 export const AlertContext = createContext();
@@ -12,8 +12,10 @@ function AlertState(props) {
     message: "",
   });
 
+  const navBarRef=useRef()
+
   return (
-    <AlertContext.Provider value={{ alert, setAlert }}>
+    <AlertContext.Provider value={{ alert, setAlert,navBarRef }}>
       {/* Provider will give access to all the above states and functions to the components which are in props.children */}
       {props.children}
     </AlertContext.Provider>

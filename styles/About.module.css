@@ -52,11 +52,11 @@
   
   .about_card small {
     font-size: 0.7rem;
-    color: var(--color-light);
+    color: var(--color-light-2);
   }
   .about_content p {
     margin: 0.5rem 0 2.6rem;
-    color: var(--color-light);
+    color: var(--color-light-2);
     text-align: justify;
   }
   .about_icon {
@@ -83,7 +83,7 @@
   }
   
   /* Media Queries For (small Devices)*/
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.5px) {
     .about_container {
       grid-template-columns: 1fr;
       gap: 0;

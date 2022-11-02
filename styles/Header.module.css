@@ -9,6 +9,7 @@
     text-align: center;
     /* height: 100%; */
     position: relative;
+    color: var(--typing-effect-color);
   }
   
   /* CTA  */
@@ -85,9 +86,17 @@
       margin-left: 2rem;
     }
   }
+
+  .theme{
+    position:absolute;
+    top:3rem;
+    right: 7rem;
+    font-size: 1.5rem;
+    color:#0ea5e9;
+  }
   
   /* Media Queries For (small Devices)*/
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.5px) {
     .header {
       margin-left: auto; /*remove this if you use navbar at bottom on lg screen */
     }
@@ -102,6 +111,13 @@
     }
     .typeeffect{
       font-size: 1.8rem;
+    }
+    .theme{
+      position:absolute;
+      top:1.5rem;
+      right: 1.5rem;
+      font-size: 1.5rem;
+      color:#0ea5e9;
     }
   }
   

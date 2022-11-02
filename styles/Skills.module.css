@@ -4,6 +4,13 @@
     gap: 2rem;
     
   }
+
+  .skills_container>div:hover .skill_detail {
+    color: var(--color-black);
+  }
+  .skills_container>div:hover .skill_detail> div >small {
+    color: var(--color-gray-varient-2);
+  }
   
   .skills_container > div {
     background: var(--color-bg-variant);
@@ -13,10 +20,15 @@
     transition: var(--transition);
     
   }
+  .skill_detail > div > small {
+    color: var(--color-light);
+    
+  }
+ 
   
   .skills_container > div:hover {
     background: var(--color-bg);
-    border-color: var(--color-primary-varient);
+    border-color: var(--color-primary);
     cursor: default;
   }
   
@@ -35,6 +47,7 @@
   .skill_detail {
     display: flex;
     gap: 1rem;
+    color: var(--color-white-2);
   }
   
   .skill_detail_icon {
@@ -58,7 +71,7 @@
   }
   
   /* Media Queries For (small Devices)*/
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.5px) {
     .skills_container {
       grid-template-columns: 1fr;
 

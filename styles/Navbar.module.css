@@ -25,7 +25,7 @@ background-image: url("/assets/otis-redding.png");
     padding: 0.9rem;
     border-radius: 50%;
     display: flex;
-    color: var(--color-light);
+    color: var(--color-black);
     font-size: 1.3rem;
   }
   
@@ -80,7 +80,7 @@ background-image: url("/assets/otis-redding.png");
 }
 
 /* Media Queries For (small Devices)*/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.5px) {
   .nav {
     box-shadow: 0 -5px 5px -5px #2c2c6c;
 
