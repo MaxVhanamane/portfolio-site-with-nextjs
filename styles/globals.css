@@ -84,7 +84,7 @@ a {
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
   /* To hide scrollbar  */
   scrollbar-width: none;  /* Firefox */
   -ms-overflow-style: none;  /* IE and Edge */
@@ -104,6 +104,7 @@ body {
 
   color: var(--color-white);
   line-height: 1.7;
+  scroll-behavior: smooth !important;
 
 }
 

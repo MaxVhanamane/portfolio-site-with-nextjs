@@ -8,37 +8,42 @@ import emailjs from "@emailjs/browser";
 import { AlertContext } from "../../context/AlertState";
 
 function Contact() {
-  // to display toast alert when the user adds a note.
+  // to display toast alert when the user submits the form.
   const AlertContextVal = useContext(AlertContext);
-  const { alert, setAlert } = AlertContextVal;
+  const { setAlert } = AlertContextVal;
   const form = useRef();
 
   const sendEmail = (e) => {
+
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "service_40itlwe",
-        "template_tmsgpiq",
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
         form.current,
-        "Bgj22xBbbdJSvGTUr"
+        process.env.NEXT_PUBLIC_PUBLIC_KEY
       )
       .then(
         (result) => {
-          console.log(result.text);
+          setAlert((preval) => ({
+            ...preval,
+            severity: "success",
+            show: true,
+            message: "Your message has been successfully sent to Max",
+          }));
         },
         (error) => {
-          console.log(error.text);
+          setAlert((preval) => ({
+            ...preval,
+            severity: "error",
+            show: true,
+            message: "Some error occurred please try again later!",
+          }));
         }
       );
     e.target.reset();
-    // Show Note added alert
-    setAlert((preval) => ({
-      ...preval,
-      severity: "success",
-      show: true,
-      message: "Your message has been successfully Sent",
-    }));
+
   };
   return (
     <section id="contact">

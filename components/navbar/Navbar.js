@@ -1,4 +1,4 @@
-import React,{useContext} from "react";
+import React, { useContext } from "react";
 import { AiOutlineHome } from "react-icons/ai";
 import { IoPersonOutline } from "react-icons/io5";
 import { TbBook2 } from "react-icons/tb";
@@ -7,14 +7,14 @@ import { IoGitNetworkOutline } from "react-icons/io5";
 import { useState } from "react";
 import styles from "./../../styles/Navbar.module.css"
 import { AlertContext } from "../../context/AlertState";
-
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 function Navbar() {
   const [activeState, setActiveState] = useState("#");
   const { navBarRef } = useContext(AlertContext);
   return (
     <nav ref={navBarRef} className={styles.nav}>
-      <a
-        href="#home"
+      <AnchorLink href="#home" 
+
         onClick={() => {
           setActiveState("#");
         }}
@@ -22,9 +22,10 @@ function Navbar() {
         title="home"
       >
         <AiOutlineHome />
-      </a>
-      <a
-        href="#about"
+      </AnchorLink>
+
+      <AnchorLink href="#about" 
+        
         onClick={() => {
           setActiveState("#about");
         }}
@@ -32,9 +33,10 @@ function Navbar() {
         title="about"
       >
         <IoPersonOutline />
-      </a>
-      <a
-        href="#skills"
+      </AnchorLink>
+
+      <AnchorLink href="#skills" 
+        
         onClick={() => {
           setActiveState("#skills");
         }}
@@ -42,9 +44,10 @@ function Navbar() {
         title="skills"
       >
         <TbBook2 />
-      </a>
-      <a
-        href="#projects"
+      </AnchorLink>
+
+      <AnchorLink href="#projects" 
+        
         onClick={() => {
           setActiveState("#projects");
         }}
@@ -52,9 +55,10 @@ function Navbar() {
         title="projects"
       >
         <IoGitNetworkOutline />
-      </a>
-      <a
-        href="#contact"
+      </AnchorLink>
+
+      <AnchorLink href="#contact" 
+        
         onClick={() => {
           setActiveState("#contact");
         }}
@@ -62,7 +66,7 @@ function Navbar() {
         title="contact"
       >
         <IoChatboxOutline />
-      </a>
+      </AnchorLink>
     </nav>
   );
 }
