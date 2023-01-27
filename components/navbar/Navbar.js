@@ -21,8 +21,8 @@ function Navbar() {
 document.body.classList.toggle("light_theme")
 if(!document.body.classList.contains("light_theme")){
 
-  document.body.style.backgroundImage ='url("/assets/otis-redding.png")';
-  navBarRef.current.style.backgroundImage='url("/assets/otis-redding.png")';
+  // document.body.style.backgroundImage ='url("/assets/otis-redding.png")';
+  // navBarRef.current.style.backgroundImage='url("/assets/otis-redding.png")';
   navBarRef.current.style.boxShadow='0 3px 3px #2c2c6c';
 
 }

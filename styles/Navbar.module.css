@@ -17,6 +17,7 @@ background: var(--color-bg);
   transform: translateY(-50%);
   gap: 0.8rem;
   backdrop-filter: blur(15);
+  
 } 
 
 
@@ -70,6 +71,8 @@ background: var(--color-bg);
         transform: translateX(-50%);
         gap: 3rem;
         backdrop-filter: blur(15);
+      border-top: 1px solid var(--color-bg-variant-hr);
+
 
   }
   .nav a {
@@ -107,6 +110,7 @@ background: var(--color-bg);
       transform: translateX(-50%);
       gap: 1rem;
       backdrop-filter: blur(15);
+      border-top: 1px solid var(--color-bg-variant-hr);
   }
 
   .nav a {
