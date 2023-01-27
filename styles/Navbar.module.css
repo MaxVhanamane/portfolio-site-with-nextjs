@@ -3,7 +3,7 @@
 .nav {
   height: 100%;
 background: var(--color-bg);
-background-image: url("/assets/otis-redding.png");
+/* background-image: url("/assets/otis-redding.png"); */
   /* border-right: 1px solid #2c2c6c; */
   box-shadow: 0 3px 3px #2c2c6c;
   display: flex;
@@ -42,6 +42,7 @@ background-image: url("/assets/otis-redding.png");
     font-size: 1.5rem;
     color:#38bdf8;
     cursor: pointer;
+    
   }
 
 
@@ -79,8 +80,8 @@ background-image: url("/assets/otis-redding.png");
   }
   
   .theme{
-    margin: 0.8rem auto;
-    font-size: 1.5rem;
+    margin: auto 0;
+    font-size: 2rem;
     color:#38bdf8;
     cursor: pointer;
   }
@@ -117,9 +118,10 @@ background-image: url("/assets/otis-redding.png");
 
   .theme{
     margin: auto 0;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color:#38bdf8;
     cursor: pointer;
+    
   }
 
 }

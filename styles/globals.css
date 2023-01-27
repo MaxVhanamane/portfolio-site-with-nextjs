@@ -100,7 +100,7 @@ body {
   /* background-image: url("https://www.transparenttextures.com/patterns/football-no-lines.png"); */
   /* background-image: url("https://www.transparenttextures.com/patterns/subtle-dark-vertical.png"); */
   /* background-image: url("https://www.transparenttextures.com/patterns/random-grey-variations.png"); */
-  background-image: url("/assets/otis-redding.png");
+  /* background-image: url("/assets/otis-redding.png"); */
   /* background-image: url("https://www.transparenttextures.com/patterns/triangles.png"); */
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 
@@ -211,7 +211,7 @@ img {
     margin-top: 1rem;
   }
   section {
-    margin-top: 6rem;
+    margin-top: 4rem;
    margin-left: auto /*remove this if you use navbar at bottom on lg screen */
 
   }
