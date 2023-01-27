@@ -1,6 +1,6 @@
 .header {
     /* height: 100vh; */
-    padding-top: 7rem;
+    padding-top: 4rem;
     /* overflow: hidden; */
    margin-left: 4.56rem; /*remove this if you use navbar at bottom on lg screen */
 
@@ -87,17 +87,12 @@
     }
   }
 
-  .theme{
-    position:fixed;
-    top:3rem;
-    right: 7rem;
-    font-size: 1.5rem;
-    color:#0ea5e9;
-  }
+
   
   /* Media Queries For (small Devices)*/
   @media screen and (max-width: 767.5px) {
     .header {
+      padding-top: 3rem;
       margin-left: auto; /*remove this if you use navbar at bottom on lg screen */
     }
     .scroll_down,
@@ -112,12 +107,6 @@
     .typeeffect{
       font-size: 1.8rem;
     }
-    .theme{
-      position:absolute;
-      top:1.5rem;
-      right: 1.5rem;
-      font-size: 1.5rem;
-      color:#0ea5e9;
-    }
+
   }
   

@@ -37,7 +37,12 @@ background-image: url("/assets/otis-redding.png");
     color: var(--color-bg);
   }
 
-
+  .theme{
+ margin: 0.8rem auto;
+    font-size: 1.5rem;
+    color:#38bdf8;
+    cursor: pointer;
+  }
 
 
   /* Media Queries For (Medium Devices)*/
@@ -73,7 +78,12 @@ background-image: url("/assets/otis-redding.png");
     font-size: 2rem;
   }
   
- 
+  .theme{
+    margin: 0.8rem auto;
+    font-size: 1.5rem;
+    color:#38bdf8;
+    cursor: pointer;
+  }
 }
 
 /* Media Queries For (small Devices)*/
@@ -94,7 +104,7 @@ background-image: url("/assets/otis-redding.png");
       bottom: 0;
       top:auto;
       transform: translateX(-50%);
-      gap: 1.4rem;
+      gap: 1rem;
       backdrop-filter: blur(15);
   }
 
@@ -103,6 +113,13 @@ background-image: url("/assets/otis-redding.png");
     padding: 0.7rem;
 
     font-size: 1.2rem;
+  }
+
+  .theme{
+    margin: auto 0;
+    font-size: 1.3rem;
+    color:#38bdf8;
+    cursor: pointer;
   }
 
 }
