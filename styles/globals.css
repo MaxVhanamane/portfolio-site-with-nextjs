@@ -59,11 +59,12 @@ a {
   --color-gray-varient-2:rgb(105, 104, 105);
   --border-color:none;
   --color-light-2: rgba(255, 255, 255, 0.6);
-  
+  --theme-toggler-color:var(--color-white)
 
 }
 
 .light_theme {
+  --theme-toggler-color:#1e293b;
   --color-bg: #f8f0f0;
   --color-bg-2: #7171ce;
   --color-bg-variant: #2c2c6c;
@@ -78,7 +79,7 @@ a {
   --container-width-sm: 90%;
   --transition: all 400ms ease;
   --typing-effect-color:#000;
-    --color-black:#000;
+    --color-black:#1e293b;
     --color-white-2:#fff;
   --color-gray:rgba(255,255,255,0.5);
   --color-gray-varient-1:#191919;
