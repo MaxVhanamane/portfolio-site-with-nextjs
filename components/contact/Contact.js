@@ -96,6 +96,7 @@ function Contact() {
           </button>
         </form>
       </div>
+      
     </section>
   );
 }

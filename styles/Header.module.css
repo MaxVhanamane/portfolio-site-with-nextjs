@@ -88,7 +88,7 @@
   }
 
   .theme{
-    position:absolute;
+    position:fixed;
     top:3rem;
     right: 7rem;
     font-size: 1.5rem;

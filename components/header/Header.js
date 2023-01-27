@@ -30,6 +30,7 @@ else{
   navBarRef.current.style.boxShadow='0 3px 3px #afafef';
 
 
+
 }
 
   }

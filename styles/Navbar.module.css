@@ -39,7 +39,6 @@ background-image: url("/assets/otis-redding.png");
 
 
 
-/* For left navbar */
 
   /* Media Queries For (Medium Devices)*/
   @media only  screen and (max-width: 1024px) and (min-width: 768px) {
@@ -48,32 +47,30 @@ background-image: url("/assets/otis-redding.png");
   }
   .nav {
 
-    border-radius: 3rem;
-    height: max-content;
-    background: rgba(0, 0, 0, 0.3);
-    box-shadow: none;
-
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      padding: 0.7rem 0.7rem;
-      z-index: 2;
-      position: fixed;
-      left:50%;
-      bottom: 0;
-      top:auto;
-      transform: translateX(-50%);
-      gap: 1.2rem;
-      backdrop-filter: blur(15);
-
-      width: 75%;
-      bottom:2rem;
-      padding: 0.7rem 1rem;
+      /* box-shadow: 0px 1px 0px #2c2c6c inset !important; only top*/ 
+      box-shadow: none !important;
+      width: 100%;
+      border-radius: 0;
+      height: max-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 1rem 1rem;
+        z-index: 2;
+        position: fixed;
+        left:50%;
+        bottom: 0;
+        top:auto;
+        transform: translateX(-50%);
+        gap: 3rem;
+        backdrop-filter: blur(15);
 
   }
   .nav a {
-    margin: 0.3rem 1.6rem;
-  font-size: 1.6rem;
+    background: transparent;
+    padding: 1rem;
+
+    font-size: 2rem;
   }
   
  
@@ -82,14 +79,11 @@ background-image: url("/assets/otis-redding.png");
 /* Media Queries For (small Devices)*/
 @media screen and (max-width: 767.5px) {
   .nav {
-    box-shadow: 0 -5px 5px -5px #2c2c6c;
-
+    /* box-shadow: 0px 1px 0px #2c2c6c inset !important; only top*/ 
+    box-shadow: none !important;
     width: 100%;
     border-radius: 0;
-    /* background: #1f1f38; */
-      
     height: max-content;
-    /* background: var(--color-bg); */
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -100,8 +94,15 @@ background-image: url("/assets/otis-redding.png");
       bottom: 0;
       top:auto;
       transform: translateX(-50%);
-      gap: 0.8rem;
+      gap: 1.4rem;
       backdrop-filter: blur(15);
+  }
+
+  .nav a {
+    background: transparent;
+    padding: 0.7rem;
+
+    font-size: 1.2rem;
   }
 
 }
@@ -166,4 +167,40 @@ background-image: url("/assets/otis-redding.png");
 
 
 
+/* different navbar style for medium devices  */
+/* @media only  screen and (max-width: 1024px) and (min-width: 768px) {
+  .container {
+    width: var(--container-width-md);
+  }
+  .nav {
 
+    border-radius: 3rem;
+    height: max-content;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: none !important;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 0.7rem 0.7rem;
+      z-index: 2;
+      position: fixed;
+      left:50%;
+      bottom: 0;
+      top:auto;
+      transform: translateX(-50%);
+      gap: 1.2rem;
+      backdrop-filter: blur(15);
+
+      width: 75%;
+      bottom:2rem;
+      padding: 0.7rem 1rem;
+
+  }
+  .nav a {
+    margin: 0.3rem 1.6rem;
+  font-size: 1.6rem;
+  }
+  
+ 
+} */

@@ -43,6 +43,7 @@ a {
   --color-bg: #1f1f38;
   --color-bg-2: #7171ce;
   --color-bg-variant: #2c2c6c;
+  --color-bg-variant-hr: #2c2c6c;
   --color-primary: #4db5ff;
   --color-primary-variant: rgba(77, 181, 255, 0.4);
   --color-white: #fff;
@@ -66,6 +67,7 @@ a {
   --color-bg: #f8f0f0;
   --color-bg-2: #7171ce;
   --color-bg-variant: #2c2c6c;
+  --color-bg-variant-hr: rgb(175, 175, 239);
   --color-primary: #36a2ef;
   --color-primary-variant: rgba(77, 181, 255, 0.4);
   --color-white: rgb(0, 0, 0);

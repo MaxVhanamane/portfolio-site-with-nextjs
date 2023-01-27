@@ -58,6 +58,7 @@
     margin: 0.5rem 0 2.6rem;
     color: var(--color-light-2);
     text-align: justify;
+    /* hyphens: auto; */
   }
   .about_icon {
     color: var(--color-primary);
