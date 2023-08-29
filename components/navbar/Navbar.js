@@ -9,7 +9,7 @@ import styles from "./../../styles/Navbar.module.css"
 import { AlertContext } from "../../context/AlertState";
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { BsSunFill } from 'react-icons/bs';
-
+import Image from "next/image"
 function Navbar() {
   const [activeState, setActiveState] = useState("#");
   const { navBarRef } = useContext(AlertContext);
@@ -39,6 +39,7 @@ else{
   }
   return (
     <nav ref={navBarRef} className={styles.nav}>
+      
       <AnchorLink href="#home" 
 
         onClick={() => {
@@ -46,6 +47,7 @@ else{
         }}
         className={activeState === "#" ? `${styles.active}` : ""}
         title="home"
+        area-label="home"
       >
         <AiOutlineHome />
       </AnchorLink>
@@ -57,6 +59,8 @@ else{
         }}
         className={activeState === "#about" ? `${styles.active}` : ""}
         title="about"
+        area-label="about"
+
       >
         <IoPersonOutline />
       </AnchorLink>
@@ -68,6 +72,8 @@ else{
         }}
         className={activeState === "#skills" ? `${styles.active}` : ""}
         title="skills"
+        area-label="skills"
+
       >
         <TbBook2 />
       </AnchorLink>
@@ -79,6 +85,7 @@ else{
         }}
         className={activeState === "#projects" ? `${styles.active}` : ""}
         title="projects"
+        area-label="projects"
       >
         <IoGitNetworkOutline />
       </AnchorLink>
@@ -90,12 +97,14 @@ else{
         }}
         className={activeState === "#contact" ? `${styles.active}` : ""}
         title="contact"
+        area-label="contact"
+
       >
         <IoChatboxOutline />
       </AnchorLink>
      
-      {changeIcon?<BsSunFill className={styles.theme} onClick={handleClick}/>:
-        <TbMoonStars className={styles.theme} onClick={handleClick}/>}
+      {changeIcon?<BsSunFill className={styles.theme} onClick={handleClick} area-label="light theme icon"/>:
+        <TbMoonStars className={styles.theme} onClick={handleClick} area-label="dark theme icon"/>}
        
     </nav>
   );

@@ -89,9 +89,9 @@ function Contact() {
             placeholder="Enter your full name"
             required
           />
-          <input className={styles.input} type="email" name="email" placeholder="Enter your email" />
-          <textarea className={styles.textarea} name="message" rows="7"></textarea >
-          <button type="submit" className= {[styles.btn,styles.btn_primary,styles.contact_container].join(" ")}>
+          <input className={styles.input} type="email" name="email" placeholder="Enter your email" aria-label="Enter your email" />
+          <textarea className={styles.textarea} name="message" rows="7" aria-label="Enter your message"></textarea >
+          <button type="submit" className= {[styles.btn,styles.contact_container].join(" ")}>
             Submit
           </button>
         </form>

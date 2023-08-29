@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 // import { FaAward } from "react-icons/fa";
 import styles from "./../../styles/About.module.css"
@@ -8,11 +9,12 @@ function About() {
       <h5>Get to know</h5>
       <h2>About Me</h2>
       <div className= {["container", styles.about_container].join(" ")}>
-        <div className={styles.about_me}>
+        {/* <div className={styles.about_me}>
           <div className={styles.about_me_image}>
-            <img src="/assets/about_me_img.jpg" alt="About me" />
+            <Image src="/assets/profMax.jpg" layout="fill" objectFit="contain"  quality={100} alt="About me" />
           </div>
-        </div>
+        </div> */}
+      
         <div className={styles.about_content}>
           {/* <div className="about_cards">
             <article className="about_card">
@@ -41,6 +43,13 @@ function About() {
           <a href="#contact" className="btn btn_primary">
             Let&apos;s Talk
           </a>
+        </div>
+        <div className={styles.about_me_image}>
+        <Image src="/assets/about_me_img.jpg"   width={278} height={278}  quality={100} alt="About me" style={{borderRadius:"10px"}}/>
+        <div  className={styles.about_me_border}>
+          
+        </div>
+
         </div>
       </div>
     </section>

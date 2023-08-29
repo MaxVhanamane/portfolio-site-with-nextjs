@@ -3,14 +3,20 @@ import styles from "./../../styles/Projects.module.css"
 import mstyles from "./../../styles/Modal.module.css"
 import Image from "next/image";
 import allProject from "./allProjects.json";
+import  Link  from 'next/link';
+import { BsHeartFill } from "react-icons/bs";
+import { AiFillGithub } from "react-icons/ai";
+import { RiPlayCircleLine } from "react-icons/ri";
+import { FaGlobeAsia } from "react-icons/fa";
 function Projects() {
 
 
   const [modal, setModal] = useState(false);
-  const [vidLink, setVidLink] = useState("");
-  const toggleModal = (vlink) => {
+  const [videoDetails, setVideoDetails] = useState({videoTitle:"",videoLink:""});
+  const [videoTitle, setVideoTitle] = useState("");
+  const toggleModal = (data) => {
     setModal(!modal);
-    setVidLink(vlink)
+    setVideoDetails((prev)=>{return {...prev,videoTitle:data.videoTitle,videoLink:data.videoLink}})
   };
 
   // To avoid scrolling of a webpage when video is open
@@ -30,10 +36,10 @@ function Projects() {
         <div className={mstyles.modal}>
           <div onClick={toggleModal} className={mstyles.overlay}></div>
           <div className={mstyles.modal_content}>
-            <video className={styles.video} controls >
+            {/* <video className={styles.video} controls >
               <source src={vidLink} type="video/mp4" />
-            </video>
-           
+            </video> */}
+           <iframe className={styles.video} src={videoDetails.videoLink} title={videoDetails.videoTitle} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen="allowFullScreen"></iframe>
            
             <button className={mstyles.close_modal} onClick={toggleModal}>
               X
@@ -43,8 +49,69 @@ function Projects() {
       )}
 
       <section id="projects">
-        <h5>My Work</h5>
-        <h2>Projects</h2>
+        <h2>Other noteworthy projects</h2>
+        {/*<h3>Client</h3>
+        <div className={["container", styles.projects_container].join(" ")}>
+
+{allProject.filter((data)=>{return data.level=="Client"}).map((data) => {
+
+  return (
+
+    <article key={data.id} className={styles.project_item} >
+     
+
+      <div 
+         className={styles.project_item_image} >
+          <div className={styles.ima}>
+        <Image className={styles.blur} src={data.image} layout="fill"  objectFit="cover" quality={100} alt="project_image"  /></div>
+        <div className= {[styles.content, styles.slide_up].join(" ")} >
+          <div className={styles.description}>
+
+          {data.details}
+          </div>
+
+          <div className={styles.tech_used}>
+            {data.tech?.map((item)=>{return <span key={item} className={styles.tech}>{item}</span>})}
+      
+      
+
+      </div>
+        
+        </div>
+
+      </div>
+
+      <h3 style={{textAlign:"left"}}>{data.title}</h3>
+
+      {data.favourite&& <div className={styles.heart_icon}>
+          <BsHeartFill style={{color:"red"}}/>
+        </div>}
+        
+      <div className={styles.project_item_cta}>
+        <a
+          href={data.github}
+          rel='noopener noreferrer' target='_blank'
+        >
+          <button className={styles.btn}> <AiFillGithub style={{fontSize:"1rem",}}/> <p>Github</p></button>
+        </a>
+         <a
+          href={data.demo}
+          rel='noopener noreferrer' target='_blank'
+        >
+          <button className={styles.btn}><FaGlobeAsia style={{fontSize:"0.9rem",}}/><p>Go Live</p></button>
+        </a> 
+        
+         {data.videoLink &&<button className={styles.btn} onClick={() => { toggleModal(data) }}> <RiPlayCircleLine style={{fontSize:"1rem",}}/> <p>Watch Demo</p></button>}
+
+       
+      </div>
+     
+    </article>
+   
+  );
+})}
+</div> */}
+        <div  style={{marginTop:"3rem"}}>
         <h3>Advanced</h3>
         <div className={["container", styles.projects_container].join(" ")}>
 
@@ -81,31 +148,32 @@ function Projects() {
 
                 <h3 style={{textAlign:"left"}}>{data.title}</h3>
                
+      {data.favourite&& <div className={styles.heart_icon}>
+          <BsHeartFill style={{color:"red"}}/>
+        </div>}
                 <div className={styles.project_item_cta}>
                   <a
                     href={data.github}
-                    className="btn"
-                    target="_blank"
-                    rel="noreferrer"
+                    rel='noopener noreferrer' target='_blank'
                   >
-                    Github
+                    <button className={styles.btn}> <AiFillGithub style={{fontSize:"1rem",}}/> <p>Github</p></button>
                   </a>
-                  {data.demo ? <a
+                   <a
                     href={data.demo}
-                    className="btn btn_primary"
-                    target="_blank"
-                    rel="noreferrer"
+                    rel='noopener noreferrer' target='_blank'
                   >
-                    Go Live
-                  </a> : <button className="btn btn_primary" onClick={() => { toggleModal(data.video) }}>Watch Demo</button>
+                    <button className={styles.btn}><FaGlobeAsia style={{fontSize:"0.9rem",}}/><p>Go Live</p></button>
+                  </a> 
+                  
+                   {data.videoLink &&<button className={styles.btn} onClick={() => { toggleModal(data) }}> <RiPlayCircleLine style={{fontSize:"1rem",}}/> </button>}
 
-                  }
+                  
                 </div>
-  
               </article>
              
             );
           })}
+        </div>
         </div>
         <div  style={{marginTop:"3rem"}}>
      
@@ -126,7 +194,7 @@ function Projects() {
                 <div 
                    className={styles.project_item_image} >
                     <div className={styles.ima}>
-                  <Image className={styles.blur} src={data.image} layout="fill"  objectFit="cover" quality={75} alt="project_image"  /></div>
+                  <Image className={styles.blur} src={data.image} layout="fill"  objectFit="cover" quality={100} alt="project_image"  /></div>
                   <div className= {[styles.content, styles.slide_up].join(" ")} >
                     <div className={styles.description}>
 
@@ -145,29 +213,28 @@ function Projects() {
                 </div>
 
                 <h3 style={{textAlign:"left"}}>{data.title}</h3>
-
                
+      {data.favourite&& <div className={styles.heart_icon}>
+          <BsHeartFill style={{color:"red"}}/>
+        </div>}
                 <div className={styles.project_item_cta}>
                   <a
                     href={data.github}
-                    className="btn"
-                    target="_blank"
-                    rel="noreferrer"
+                    rel='noopener noreferrer' target='_blank'
                   >
-                    Github
+                    <button className={styles.btn}>Github</button>
                   </a>
-                  {data.demo ? <a
+                   <a
                     href={data.demo}
-                    className="btn btn_primary"
-                    target="_blank"
-                    rel="noreferrer"
+                    rel='noopener noreferrer' target='_blank'
                   >
-                    Go Live
-                  </a> : <button className="btn btn_primary" onClick={() => { toggleModal(data.video) }}>Watch Demo</button>
+                    <button className={styles.btn}>Go Live</button>
+                  </a> 
+                  
+                   {data.videoLink &&<button className={styles.btn} onClick={() => { toggleModal(data) }}>Watch Demo</button>}
 
-                  }
+                  
                 </div>
-  
               </article>
              
             );

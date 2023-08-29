@@ -40,15 +40,20 @@ a {
 /* css variables */
 
 :root {
-  --color-bg: #0f172a;
+  --color-bg: #0a192f;
+  --color-bg-cards-hover: #112240;
+  --color-bg-project-hover: #1e2f50;
+  --project_info_color:#a8b2d1;
+  --project-name-color:#64ffda;
+  --project-name-color-2:#fff;
   --color-bg-2: #7171ce;
-  --color-bg-variant: #2c2c6c;
+  --color-bg-variant: #112240;
   --color-bg-variant-hr: #2c2c6c;
   --color-primary: #4db5ff;
   --color-primary-variant: rgba(77, 181, 255, 0.4);
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
-  --container-width-lg: 75%;
+  --container-width-lg: 77%;
   --container-width-md: 86%;
   --container-width-sm: 90%;
   --transition: all 400ms ease;
@@ -56,10 +61,12 @@ a {
   --color-black:rgb(255, 253, 253);
   --color-gray:rgba(255,255,255,0.5);
   --color-gray-varient-1:#1f2937;
-  --color-gray-varient-2:rgb(105, 104, 105);
+  --color-gray-varient-2:var(--color-light);
+  --color-gray-varient-3:rgb(105, 104, 105);
   --border-color:none;
   --color-light-2: rgba(255, 255, 255, 0.6);
-  --theme-toggler-color:var(--color-white)
+  --theme-toggler-color:var(--color-white);
+  --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono","monospace";
 
 }
 
@@ -71,19 +78,26 @@ a {
   --color-bg-variant-hr: rgba(77, 181, 255, 0.4);
   --color-primary: #36a2ef;
   --color-primary-variant: rgba(77, 181, 255, 0.4);
-  --color-white: rgb(0, 0, 0);
+  --color-white: #000;
   --color-light: rgba(255, 237, 237, 0.6);
   --color-light-2: rgba(0, 0, 0, 0.7);
-  --container-width-lg: 75%;
+  --container-width-lg: 77%;
   --container-width-md: 86%;
   --container-width-sm: 90%;
   --transition: all 400ms ease;
-  --typing-effect-color:#000;
+  --typing-effect-color:#1f2937;
     --color-black:#1e293b;
     --color-white-2:#fff;
   --color-gray:rgba(255,255,255,0.5);
   --color-gray-varient-1:#191919;
   --color-gray-varient-2:rgb(105, 104, 105);
+  --color-gray-varient-3:rgb(105, 104, 105);
+  --color-bg-cards-hover: #080848;
+  --color-bg-project-hover: #080848;
+  --project_info_color:#fff;
+  --project-name-color:var(--color-primary);
+  --project-name-color-2:#1f2937;
+
 }
 
 html {
@@ -134,12 +148,13 @@ h1 {
 
 section {
   margin-top: 8rem;
-   margin-left: 4.56rem; /*remove this if you use navbar at bottom on lg screen */
+  margin-left: 4.56rem; /*remove this if you use navbar at bottom on lg screen */
 }
 
 h3{
   text-align: center;
   margin-bottom: 2rem;
+  color: var(--project-name-color-2);
 }
 section > h2,
 section > h5 {
@@ -173,6 +188,8 @@ a:hover {
   border-radius: 0.4rem;
   cursor: pointer;
   border: 1px solid var(--color-primary);
+  transition: var(--transition);
+
 }
 
 .btn:hover {
@@ -183,7 +200,7 @@ a:hover {
 
 .btn_primary {
   background: var(--color-primary);
-  color: var(--color-bg);
+  color: white;
 }
 img {
   display: block;

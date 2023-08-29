@@ -8,6 +8,7 @@ import Navbar from './../components/navbar/Navbar';
 import Contact from './../components/contact/Contact';
 import Footer from './../components/footer/Footer';
 import ShowAlert from './../components/ShowAlert';
+import Projectss from './../components/projects/Projectss';
 export default function Home() {
   return (
     <>
@@ -24,6 +25,7 @@ export default function Home() {
     <ShowAlert/>
     <About/>
     <Skills/>
+    <Projectss/>
     <Projects/>
     <Contact/>
     <Footer/>

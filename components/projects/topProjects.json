@@ -1,0 +1,39 @@
+[ 
+
+     { "id":3,
+     "image":"/files/projects/teacherstoolkit/teacherstoolkit.webp",
+     "title":"Teachers Toolkit (for client)",
+     "github":"https://github.com/MaxVhanamane/teachers-toolkit",
+     "demo":"https://shejalesir.vercel.app/",
+     "details":"With this app, students can access simple and easy notes made by their teachers. I have added several options to pick from. check it out. It has an admin panel for managing notes.",
+     "tech":["HTML","Tailwind CSS","Javascript","ReactJs","NextJs","MongoDB"],
+     "level":"Client",
+     "favourite":true
+    },
+
+    
+     { "id":8,
+     "image":"/files/projects/decker/deckerimage.png",
+
+     "title":"Decker",
+     "github":"https://github.com/MaxVhanamane/decker",
+     "demo":"https://decker.vercel.app",
+     "details":"The Decker app enables you to create various decks, and within each deck, you can add cards. It also has a drag-and-drop functionality and several other features, check it out.",
+     "tech":["Typescript","ReactJS","React Query","NodeJS","ExpressJS","MongoDB","HTML","CSS"],
+     "level":"Advanced",
+     "favourite":true
+    },
+     { "id":9,
+     "image":"/files/projects/redtomato/redtomatoimage.png",
+
+     "title":"Redtomato",
+     "github":"https://github.com/MaxVhanamane/decker",
+     "demo":"https://redtomato.vercel.app",
+     "details":"Redtomato is a food delivery website where you can browse menus and place orders. It uses Razorpay for secure transactions. It has an admin panel for managing data.",
+     "tech":["NextJs","ReactJS","Tailwind CSS","RazorPay","MongoDB","HTML","CSS"],
+     "level":"Client",
+     "favourite":true
+    }
+     
+    ]
+ 

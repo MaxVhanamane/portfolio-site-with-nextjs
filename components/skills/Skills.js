@@ -1,5 +1,7 @@
 import React from "react";
-import { RiShieldCheckFill } from "react-icons/ri";
+import { IoCodeSlash } from "react-icons/io5";
+import { BiChip, BiDesktop } from "react-icons/bi";
+import { HiDatabase } from "react-icons/hi";
 import styles from "./../../styles/Skills.module.css"
 
 function Skills() {
@@ -13,46 +15,60 @@ function Skills() {
           <h3>Frontend Development</h3>
           <div className={styles.skills_content}>
             <article className={styles.skill_detail}>
-              <RiShieldCheckFill className={styles.skill_detail_icon} />
+              <BiDesktop className={styles.skill_detail_icon} />
               <div>
                 <h4>HTML</h4>
-                <small >Advanced</small>
+                
               </div>
             </article>
             <article className={styles.skill_detail}>
-              <RiShieldCheckFill className={styles.skill_detail_icon} />
+              <BiDesktop className={styles.skill_detail_icon} />
               <div>
                 <h4>CSS</h4>
-                <small >Intermediate</small>
+                
               </div>
             </article>
 
             <article className={styles.skill_detail}>
-              <RiShieldCheckFill className={styles.skill_detail_icon} />
+              <BiDesktop className={styles.skill_detail_icon} />
               <div>
                 <h4>Bootstrap</h4>
-                <small >Intermediate</small>
+                
               </div>
             </article>
             <article className={styles.skill_detail}>
-              <RiShieldCheckFill className={styles.skill_detail_icon} />
+              <BiDesktop className={styles.skill_detail_icon} />
               <div>
                 <h4>Tailwind CSS</h4>
-                <small >Intermediate</small>
+                
               </div>
             </article>
             <article className={styles.skill_detail}>
-              <RiShieldCheckFill className={styles.skill_detail_icon} />
+              <BiDesktop className={styles.skill_detail_icon} />
+              <div>
+                <h4>ReactJs</h4>
+                
+              </div>
+            </article>
+            <article className={styles.skill_detail}>
+              <BiDesktop className={styles.skill_detail_icon} />
+              <div>
+                <h4>React Query</h4>
+                
+              </div>
+            </article>
+            <article className={styles.skill_detail}>
+              <BiDesktop className={styles.skill_detail_icon} />
+              <div>
+                <h4>Typescript</h4>
+                
+              </div>
+            </article>
+            <article className={styles.skill_detail}>
+              <BiDesktop className={styles.skill_detail_icon} />
               <div>
                 <h4>JavaScript</h4>
-                <small >Advanced</small>
-              </div>
-            </article>
-            <article className={styles.skill_detail}>
-              <RiShieldCheckFill className={styles.skill_detail_icon} />
-              <div>
-                <h4>React.js</h4>
-                <small >Advanced</small>
+                
               </div>
             </article>
           
@@ -63,38 +79,38 @@ function Skills() {
           <h3>Backend Development</h3>
           <div className={styles.skills_content}>
             <article className={styles.skill_detail}>
-              <RiShieldCheckFill className={styles.skill_detail_icon} />
+              <IoCodeSlash className={styles.skill_detail_icon} />
               <div>
                 <h4>Python</h4>
-                <small >Advanced</small>
+                
               </div>
             </article>
             <article className={styles.skill_detail}>
-              <RiShieldCheckFill className={styles.skill_detail_icon} />
+              <IoCodeSlash className={styles.skill_detail_icon} />
               <div>
                 <h4>Express.js</h4>
-                <small >Advanced</small>
+                
               </div>
             </article>
             <article className={styles.skill_detail}>
-              <RiShieldCheckFill className={styles.skill_detail_icon} />
+              <IoCodeSlash className={styles.skill_detail_icon} />
               <div>
                 <h4>Django</h4>
-                <small >Intermediate</small>
+                
               </div>
             </article>
             <article className={styles.skill_detail}>
-              <RiShieldCheckFill className={styles.skill_detail_icon} />
+              <IoCodeSlash className={styles.skill_detail_icon} />
               <div>
                 <h4>Flask</h4>
-                <small >Intermediate</small>
+                
               </div>
             </article>
             <article className={styles.skill_detail}>
-              <RiShieldCheckFill className={styles.skill_detail_icon} />
+              <IoCodeSlash className={styles.skill_detail_icon} />
               <div>
                 <h4>Next.js</h4>
-                <small >Advanced</small>
+                
               </div>
             </article>
           </div>
@@ -105,17 +121,17 @@ function Skills() {
           <h3>Database</h3>
           <div className={styles.skills_content}>
             <article className={styles.skill_detail}>
-              <RiShieldCheckFill className={styles.skill_detail_icon} />
+              <HiDatabase className={styles.skill_detail_icon} />
               <div>
                 <h4>SQL</h4>
-                <small >Intermediate</small>
+                
               </div>
             </article>
             <article className={styles.skill_detail}>
-              <RiShieldCheckFill className={styles.skill_detail_icon} />
+              <HiDatabase className={styles.skill_detail_icon} />
               <div>
                 <h4>MongoDB</h4>
-                <small >Intermediate</small>
+                
               </div>
             </article>
           </div>
@@ -125,17 +141,17 @@ function Skills() {
           <h3>Other Technologies</h3>
           <div className={styles.skills_content}>
             <article className={styles.skill_detail}>
-              <RiShieldCheckFill className={styles.skill_detail_icon} />
+              <BiChip className={styles.skill_detail_icon} />
               <div>
                 <h4>Git & Github</h4>
-                <small >Intermediate</small>
+                
               </div>
             </article>
             <article className={styles.skill_detail}>
-              <RiShieldCheckFill className={styles.skill_detail_icon} />
+              <BiChip className={styles.skill_detail_icon} />
               <div>
                 <h4>API&apos;s</h4>
-                <small >Intermediate</small>
+                
               </div>
             </article>
           </div>

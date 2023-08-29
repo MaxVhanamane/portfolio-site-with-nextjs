@@ -4,17 +4,18 @@
     gap: 2.5rem;
   }
   .project_item {
+    position: relative;
     background: var(--color-bg-variant);
     border-radius: 1.8rem;
     transition: var(--transition);
   }
   
   .project_item:hover {
-    background: var(--color-bg-2);
+    background: var(--color-bg-project-hover)
     /* transform: scale(1.05); */
     
   } 
-  
+
   
   /* showing text on hover  */
   .project_item:hover .content.slide_up {
@@ -57,6 +58,13 @@ object-fit: cover;
   .project_item_image:hover > .ima.blur{
     filter: blur(5px); 
   }
+  .heart_icon{
+    position: absolute;
+    bottom:104px;
+    right:5px;
+    font-size:1rem;
+    
+  }
   
   .project_item_image > .content.slide_up{
     display: flex;
@@ -93,7 +101,7 @@ object-fit: cover;
   .tech{
     display: block;
     margin-bottom: 0.5rem;
-    background: var(--color-gray-varient-2);
+    background: var(--color-gray-varient-3);
     padding: 4px 10px;
     border-radius: 50px;
     text-transform: capitalize;
@@ -105,23 +113,58 @@ object-fit: cover;
   
   }
   .project_item_cta {
-    margin-left: 1.2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     display: flex;
+    align-items: center;
+    margin-left:1.2rem;
     gap: 1rem;
   }
 
   .video {
     width: 100%    ;
-    height: auto ;
+    height: 100% ;
     object-fit: fill;
   }
+
+  .btn {
+    width: max-content;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+    background: #0ea5e9;
+    font-weight: 700;
+    display: flex;
+    justify-items:center;
+    align-items: center;
+    gap:4px;
+  }
   
+  .btn:hover {
+    background: var(--color-white);
+    color: var(--color-bg);
+    border-color: transparent;
+  }
+  
+
      /* Media Queries For (Medium Devices)*/
      @media only  screen and (max-width: 1024px) and (min-width: 768px) {
     .projects_container {
       grid-template-columns: 1fr 1fr;
       gap: 1.2rem;
+    }
+    .project_item_cta {
+      justify-items: center;
+      margin-bottom: 1.5rem;
+      display: flex;
+      gap: 1rem;
+    }
+    .heart_icon{
+     
+      bottom:110px;
+
     }
   }
 
@@ -129,7 +172,18 @@ object-fit: cover;
   @media screen and (max-width: 767.5px) {
     .projects_container {
       grid-template-columns: 1fr;
-      gap: 1rem;
+      gap: 1.9rem;
+    }
+    .project_item_cta {
+      margin-bottom: 1.5rem;
+      display: flex;
+      gap: 0.6rem;
+      justify-items: center;
+    }
+    .heart_icon{
+   
+      bottom:110px;
+      
     }
   }
   

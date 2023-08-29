@@ -1,10 +1,14 @@
 .about_container {
-    display: grid;
-    grid-template-columns: 35% 50%;
-    gap: 15%;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    gap: 4rem;
   }
-  
-  .about_me {
+  .about_content{
+    order:1;
+    width:60%;
+  }
+  /* .about_me {
     width: 100%;
     aspect-ratio: 1/1;
     border-radius: 2rem;
@@ -22,10 +26,36 @@
     overflow: hidden;
     transform: rotate(10deg);
     transition: var(--transition);
+    width: 100%;
+    height: 100%;
   }
   .about_me_image:hover {
     transform: rotate(0);
+  } */
+  
+  .about_me_border{
+    position: absolute;
+    top:1rem;
+    left:1rem;
+    width:278px;
+    height:278px;
+border:2px solid var(--color-primary);
+border-radius:10px;
+z-index:-1;
+transition: all 200ms linear;
   }
+ 
+
+  .about_me_image{
+    position:relative;
+    order:2;
+
+  }
+  .about_me_image:hover  .about_me_border {
+    top:0.7rem;
+    left:0.7rem;
+  }
+
   
   .about_cards {
     display: grid;
@@ -70,8 +100,13 @@
    /* Media Queries For (Medium Devices)*/
    @media only  screen and (max-width: 1024px) and (min-width: 768px) {
     .about_container {
-      grid-template-columns: 1fr;
-      gap: 0;
+      
+      flex-direction: column;
+    }
+    .about_content{
+      order:2;
+    width:80%;
+
     }
     .about_me {
       width: 50%;
@@ -80,14 +115,24 @@
     .about_content p {
       margin: 1rem 0 1.5rem;
     }
+    .about_me_image{
+      position:relative;
+      order:1;
+  
+    }
 
   }
   
   /* Media Queries For (small Devices)*/
   @media screen and (max-width: 767.5px) {
     .about_container {
-      grid-template-columns: 1fr;
-      gap: 0;
+      flex-direction: column;
+
+    }
+    .about_content{
+      order:2;
+    width:95%;
+
     }
     .about_me {
       width: 65%;
@@ -102,6 +147,11 @@
     }
     .about_content p {
       margin: 1.5rem 0;
+    }
+    .about_me_image{
+      position:relative;
+      order:1;
+  
     }
   }
   
